@@ -1,8 +1,10 @@
 <div style="text-align:center">
     <h1>李曦</h1>
     <p>{{getFormatBirthday()}}</p>
-    <p>丙申年十月六日</p>
-    <p>{{calendarInfos.Animal}}</p>
+    <p>{{getLunarFormatDate()}}</p>
+    <p>{{getAnimal()}}</p>
     <p>出生第{{getDaysAfterBirthday()}}天</p>
-    <p>距下一个生日还有 {{getDaysBeforeNextBirthday()}} 天</p>
+    <br>
+    <p>距下一个生日{{getSolarDateNextLunarBirthday()}}</p>
+    <p>还有 {{getDaysBeforeNextBirthday()}} 天</p>
 </div>

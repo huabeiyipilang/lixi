@@ -1,10 +1,10 @@
 <div style="text-align:center">
-    <h1>李曦</h1>
-    <p>{{getFormatBirthday()}}</p>
-    <p>{{getLunarFormatDate()}}</p>
-    <p>{{getAnimal()}}</p>
-    <p>出生第{{getDaysAfterBirthday()}}天</p>
+    <h1>{{respObject?.name}}</h1>
+    <p>{{respObject?.solarDate}}{{respObject?.solarTime}}</p>
+    <p>{{respObject?.lunarDate}}</p>
+    <p>{{respObject?.shuxiang}}</p>
+    <p>出生第{{respObject?.liveDays}}天</p>
     <br>
-    <p>距下一个生日{{getSolarDateNextLunarBirthday()}}</p>
-    <p>还有 {{getDaysBeforeNextBirthday()}} 天</p>
+    <p>距下一个生日{{respObject?.nextBirthday}}</p>
+    <p>还有 {{respObject?.nextBirthdayCountdown}} 天</p>
 </div>
